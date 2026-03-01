@@ -15,4 +15,6 @@ FROM alpine
 
 COPY --from=builder /wick/wick /bin/wick
 
+USER nobody
+
 CMD ["/bin/wick"]
